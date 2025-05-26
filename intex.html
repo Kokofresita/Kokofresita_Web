@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Koko fresita - Mini Panqueques</title>
+  <style>
+    :root {
+      --rosa-pastel: #f8c3cd;
+      --blanco: #ffffff;
+      --rosa-medio: #f06c9b;
+      --gris-suave: #f5f5f5;
+      --texto: #4a4a4a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gris-suave);
+      color: var(--texto);
+    }
+
+    header {
+      background-color: var(--rosa-pastel);
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--blanco);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: var(--blanco);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: var(--rosa-medio);
+      text-align: center;
+    }
+
+    .producto {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .producto img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(240,108,155,0.5);
+    }
+
+    .detalle {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .detalle h2 {
+      margin: 0 0 10px 0;
+      color: var(--rosa-medio);
+    }
+
+    .precio {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--rosa-pastel);
+    }
+
+    button {
+      background-color: var(--rosa-medio);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: var(--blanco);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #d75a81;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+      background-color: var(--gris-suave);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    select, input {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .promo {
+      background-color: #ffe6ec;
+      padding: 30px 20px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .promo h2 {
+      color: var(--rosa-medio);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      background-color: #fff0f5;
+      padding: 30px 20px;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+
+    .menu h2 {
+      color: var(--rosa-medio);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: var(--texto);
+      background-color: var(--gris-suave);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Koko fresita
+  </header>
+
+  <main>
+    <h1>Mini Panqueques con Frutilla y Guineo</h1>
+
+    <!-- MENÚ -->
+    <section class="menu">
+      <h2>Menú</h2>
+
+      <div class="producto">
+        <img src="https://via.placeholder.com/150" alt="Koko Stick+" />
+        <div class="detalle">
+          <h2>KOKO STICK+</h2>
+          <p>Banderilla con minipanqueque, frutilla y guineo.</p>
+          <p>Ingredientes: Dulce de leche o leche condensada.</p>
+          <p class="precio">Precio: 7 Bs</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://via.placeholder.com/150" alt="Mini Stick" />
+        <div class="detalle">
+          <h2>MINI STICK</h2>
+          <p>Mini banderilla con minipanqueque, frutilla y guineo.</p>
+          <p>Ingredientes: Dulce de leche o leche condensada.</p>
+          <p class="precio">Precio: 5 Bs</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://via.placeholder.com/150" alt="Mini Koko" />
+        <div class="detalle">
+          <h2>MINI KOKO</h2>
+          <p>Fuente pequeña con minipanqueque, frutilla y guineo.</p>
+          <p>Ingredientes: Dulce de leche, leche condensada, mermelada o leche en polvo.</p>
+          <p class="precio">Precio: 8 Bs</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://via.placeholder.com/150" alt="Promo 2 por 15 Bs" />
+        <div class="detalle">
+          <h2>PROMO: 2 por 15 Bs</h2>
+          <p>Compra dos y recibe un <strong>6% de descuento</strong> más <strong>un ingrediente gratis</strong>.</p>
+          <p class="precio">Precio final: 15 Bs</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://via.placeholder.com/150" alt="Kokaso" />
+        <div class="detalle">
+          <h2>KOKASO</h2>
+          <p>Vaso grande con minipanqueque, frutilla, guineo, granola, mini malvaviscos y froot loops.</p>
+          <p>Incluye 2 ingredientes a elección: dulce de leche, leche condensada, leche en polvo, mermelada o chispas.</p>
+          <p class="precio">Precio: 9 Bs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS PRINCIPALES -->
+    <div class="producto">
+      <img src="https://i.imgur.com/5jQ6b4T.jpg" alt="Mini Panqueques con Frutilla" />
+      <div class="detalle">
+        <h2>Envase Pequeño</h2>
+        <p>Mini panqueques frescos con frutilla y guineo. Toppings a elección: dulce de leche o leche condensada.</p>
+        <p class="precio">Precio: 8 Bs</p>
+        <a href="https://wa.me/59177384127?text=Hola!%20Quiero%20un%20envase%20peque%C3%B1o%20de%20panqueques%20de%20Koko%20fresita." target="_blank">
+          <button>Ordenar por WhatsApp</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://i.imgur.com/8x2p7Zs.jpg" alt="Banderilla Grande" />
+      <div class="detalle">
+        <h2>Banderilla Grande</h2>
+        <p>Porción grande de panqueques con frutilla y guineo. Toppings a elección: dulce de leche o leche condensada.</p>
+        <p class="precio">Precio: 15 Bs (2 unidades)</p>
+        <a href="https://wa.me/59177384127?text=Hola!%20Quiero%20una%20banderilla%20grande%20de%20panqueques%20de%20Koko%20fresita." target="_blank">
+          <button>Ordenar por WhatsApp</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- PROMO -->
+    <section class="promo">
+      <h2>Promos especiales</h2>
+      <div class="producto">
+        <img src="https://i.imgur.com/NH1KzWv.jpg" alt="Promo 2x1 Panqueques" />
+        <div class="detalle">
+          <h2>¡Llévate 2 por solo 15 Bs!</h2>
+          <p>Disfruta más por menos. Puedes elegir dos unidades (bandejas o banderillas) con los toppings que más te gusten.</p>
+          <p class="precio">Promo: 15 Bs</p>
+          <a href="https://wa.me/59177384127?text=Hola!%20Quiero%20aprovechar%20la%20promo%20de%202%20por%2015%20Bs%20de%20Koko%20fresita!" target="_blank">
+            <button>Ordenar Promo</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <h2>Haz tu pedido personalizado</h2>
+    <form onsubmit="enviarPedido(event)">
+      <label for="producto">Elige tu producto:</label>
+      <select id="producto" required>
+        <option value="">--Selecciona--</option>
+        <option value="Envase pequeño">Envase pequeño</option>
+        <option value="Banderilla pequeña">Banderilla pequeña</option>
+        <option value="Banderilla grande">Banderilla grande</option>
+      </select>
+
+      <label for="topping">Topping:</label>
+      <select id="topping" required>
+        <option value="">--Selecciona--</option>
+        <option value="Dulce de leche">Dulce de leche</option>
+        <option value="Leche condensada">Leche condensada</option>
+        <option value="Leche en polvo">Leche en polvo</option>
+        <option value="Mermelada">Mermelada</option>
+      </select>
+
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" placeholder="Ej: Ana" required />
+
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Koko fresita - Todos los derechos reservados
+  </footer>
+
+  <script>
+    function enviarPedido(e) {
+      e.preventDefault();
+      const producto = document.getElementById('producto').value;
+      const topping = document.getElementById('topping').value;
+      const nombre = document.getElementById('nombre').value;
+      const mensaje = `Hola! Soy ${nombre}. Quisiera pedir: ${producto} con ${topping}.`;
+      const url = `https://wa.me/59177384127?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
